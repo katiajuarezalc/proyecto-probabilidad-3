@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Distribución binomial</title>
+        <script type="text/javascript" src="binomialjs.js"></script>
+        <link href="binomial_styles.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="box">
+                    <b class="titulo">Distribución binomial</b>
+                </div>
+                <br>
+                <div class="info">
+                    <p>
+                        Un experimento de Bernouilli puede tener como resultado un éxito con
+                        probabilidad <b>p</b> y un fracaso con probabilidad <b>q=1-p</b>.
+                    </p>
+                    <p>Entonces, la distribución de probabilidad de la variable binomial X,
+                        considerando el número de éxitos en <b>n</b> ensayos independientes es:                   
+                    </p> 
+                    <div class="contenedor">
+                        <figure class="buttons">
+                            <img src="img/formula_binomial.jpg" width="500" alt="Formula Binomial">
+                            <figcaption class="caption">Formula distribución binomial</figcaption>
+                        </figure>
+                        <figure class="buttons">
+                            <img src="img/binomial_grafica.gif" width="400" alt="Grafica Binomial" title="Ejemplo de gráfica de distribución binomial">
+                            <figcaption class="caption">Ejemplo de gráfica de distribución binomial</figcaption>
+                        </figure>   
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+                <br>
+                <div>
+                    
+                    <div class="box">
+                    <b class="titulo-problema">Ejemplo: Problema de la enfermedad rara</b>
+                </div>
+                    <br>
+                    <div class="contenedor">
+                        <div class="ins">
+                            <p>
+                                Existe probabilidad de que un paciente se recupere de una rara enfermedad sanguínea.
+                                Si se sabe que cierto numero de personas contrajeron la enfermedad, ¿cuál es la probabilida de que sobrevivan x pacientes? 
+                            </p> 
+
+                            <p> 
+                                Ingrese el numero de pacientes contagiados (n):
+                                <input type="text" id="n_value" class="number-input" placeholder="15">
+                            </p>
+                            <p> 
+                                Ingrese la probabilidad de recuperación (p):
+                                <input type="text" id="p_value" class="number-input" placeholder="0.4">
+                            </p>
+                            <p> 
+                                Ingrese la cantidad de pacientes que sobreviven (x):
+                                <input type="text" id="x_value" class="number-input" placeholder="5">
+                            </p>
+                            <div class="buttons">
+                                <input type="button" onclick="binomialSolve()" value="Calcular probabilidad" class="action-button">  
+                            </div> 
+                        </div>
+                        <div class="img-problem">
+                            <img src="img/patient2.gif" width="400" alt="Paciente">
+                        </div>
+                      
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
