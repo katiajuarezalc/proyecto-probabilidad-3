@@ -41,8 +41,8 @@ const Home = () => {
         {
             title: 'Distribución normal',
             href: './distribucion-normal/dn.html',
-            author: 'Resendiz Chavez Luis Fernando',
-            foto: './assets/luis.jpg',
+            author: 'Reséndiz Chávez Luis Fernando',
+            foto: './assets/luis.png',
             dist: './assets/d_normal.png'
         },
         {
