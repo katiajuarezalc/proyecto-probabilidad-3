@@ -36,7 +36,7 @@ const Home = () => {
             href: './',
             author: 'Juarez Alcantara Katia Fernanda',
             foto: './assets/kat.jpg',
-            dist: './assets/d_bin.png'
+            dist: './assets/d_binomial.png'
         },
         {
             title: 'Distribución normal',
