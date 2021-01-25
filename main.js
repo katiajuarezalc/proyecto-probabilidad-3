@@ -57,7 +57,7 @@ const Home = () => {
             href: './',
             author: 'Valdovinos Castellanos Jesus Neftali',
             foto: './assets/neftali.jpg',
-            dist: './assets/d_poison.png'
+            dist: './assets/d_poison.jpg'
         }
     ]
     return (
