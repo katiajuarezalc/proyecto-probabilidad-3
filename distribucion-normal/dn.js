@@ -1,11 +1,35 @@
+const SelectData = ({ value, set, range }) => {
+    const handleChange = (e) => {
+        set(Number(e.target.value));
+    }
+    return (
+        <select value={value} onChange={handleChange}>
+            {range.map((el, id) => <option key={id} value={el}>{el}</option>)}
+        </select>
+    )
+}
+
 const Problema = () => {
+    const [media, setMedia] = React.useState(6);
+    const [desviacion, setDesviacion] = React.useState(2);
+    const [peso, setPeso] = React.useState(8);
     return (
         <>
             <h1>El problema de ...</h1>
             <h2>Descripcion</h2>
-            <p>Descripcion del problema here</p>
+            <p>El peso de cierto modelo de baterias sigue una distribucion normal con una media de <SelectData value={media} set={setMedia} range={[4, 5, 6, 7, 8]} />g y desvianción estandar de <SelectData value={desviacion} set={setDesviacion} range={[1, 2, 3]} />g.</p>
+            <p>Determine el procentaje de baterias cuyo peso es mayor a <SelectData value={peso} set={setPeso} range={[8, 9, 10]} />g.</p>
+            <div className="image">
+                <img src="img/nd.png" />
+            </div>
+            <div className="datos">
+                <p>µ = {media}</p>
+                <p>σ = {desviacion}</p>
+                <p>peso = {peso}g</p>
+            </div>
             <h2>Solucion</h2>
-            <p>Solucion de problema here</p>
+            <p>Utilizaremos la formula para convertir nuestros valores de x a z.</p>
+            <p>z = (x - µ) / σ</p>
         </>
     )
 };
