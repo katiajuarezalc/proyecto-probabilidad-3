@@ -31,6 +31,9 @@
            margin: 10px;
            padding: 3px 5px 1px;
         }
+      img{
+          display: block;
+        }
       </style>
   </head>
   <body>
@@ -42,24 +45,25 @@
             var n=document.getElementById("tam").value;
             a.value = n-x;
           }
+        
       </script>
       <div class="row">
-        <div class="col-md-1">
+        <div class="col">
           <img src="img/corazonA.bmp" class="img-fluid">
           <img src="img/corazonJ.bmp" class="img-fluid">
           <img src="img/corazonQ.bmp" class="img-fluid">
           <img src="img/corazonK.bmp" class="img-fluid">
           <img src="img/trebolA.bmp" class="img-fluid">
-          <img src="img/trebolJ.bmp" class="img-fluid">
-          <img src="img/trebolQ.bmp" class="img-fluid">
-          <img src="img/trebolK.bmp" class="img-fluid">
+          <img src="img/trebolj.bmp" class="img-fluid">
+          <img src="img/trebolq.bmp" class="img-fluid">
+          <img src="img/trebolk.bmp" class="img-fluid">
         </div>
-        <div class="col-md-10">
+        <div class="col">
           <div class="row">
             <h1>Distribucion Hipergeométrica</h1>
             <p>La distribución hipergeométrica es especialmente útil en todos aquellos casos en los que se extraigan muestras o se realicen experiencias repetidas sin devolución del elemento extraído o sin retornar a la situación experimental inicial.
             Es una distribución fundamental en el estudio de muestras pequeñas de poblaciones pequeñas y en el cálculo de probabilidades de juegos de azar. Tiene grandes aplicaciones en el control de calidad para  procesos experimentales en los que no es posible retornar a la situación de partida</p>
-            <h5>Con formula:<img src="img/formula.png" width="60%" height="50%" class="img-fluid"></h5>
+            <h5>Con formula:<img src="img/formula.png" width="60%" height="50%" class="img-fluid" style="display: inline;></h5>
             <h3>Ejercicio</h3>
             <p>De una baraja tradicional se sacan 5 cartas al azar, nos interesa la probabilidad de seleccionar 3 cartas rojas de las 26 disponibles y 2 de las 26 cartas negras de las que dispone la baraja. Los datos precargados son el ejemplo inicial, puedes jugar con los valores.</p>
           </div>
@@ -82,7 +86,7 @@
               </div>
           </div>
         </div>
-        <div class="col-md-1">
+        <div class="col">
           <img src="img/naipeA.bmp" class="img-fluid">
           <img src="img/naipeJ.bmp" class="img-fluid">
           <img src="img/naipeQ.bmp" class="img-fluid">
