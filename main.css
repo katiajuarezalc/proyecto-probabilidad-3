@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub {
+    margin: .5em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 960px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+.demos, .integrantes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.demo, .integrante {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 1em .5em;
+    margin: .5em;
+    text-align: center;
+    width: 18%;
+    transition: all ease .2s;
+}
+
+.demo:hover, .integrante:hover {
+    border: 1px solid #0070f3;
+}
+
+.demo a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+
+.demo a:hover {
+    text-decoration: underline;
+}
+
+.demo .image {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.demo .image img {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.integrante .image {
+    border-radius: 100em;
+    margin: 0 auto 1em auto;
+    width: 60%;
+}
+
+.integrante .image img {
+    width: 100%;
+    border-radius: 100em;
+}
+
+.integrante h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+@media all and (max-width: 930px) {
+    .demo, .integrante {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .demo, .integrante {
+        width: 45%;
+    }
+}
