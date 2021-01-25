@@ -1,0 +1,1 @@
+aun no lo termino xd, cualquier recomendación o sugerencia será bien aceptada.
