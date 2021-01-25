@@ -1,38 +1,46 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
   <head>
     <meta charset="utf-8"></meta>
-  <title>Distribución binomial negativa</title>
-  <link rel="stylesheet" href="binomialn.css"/>
+    <title>Distribución binomial negativa</title>
+    <link rel="stylesheet" href="binomialn.css"/>
   </head>
   <body>
     <div id="container">
-    <header>
+      <header>
         <h1>  Distribucion binomial negativa  </h1>
-    </header>
-    <nav>
-    <a href="index.html">  <h1>Regresar al index
-    </h1> </a href>
+      </header>
+      <nav>
+        <h1>La formula que representa a la distribución binomial negativa es:</h1>
+        <img src="img/BinomialNegativa.png" widht="50" height="50">
+  <br><p1>La distribución binomial negativa es un modelo adecuado para tratar aquellos procesos en los que se repite
+  un determinado ensayo o prueba hasta conseguir un número determinado de resultados favorables (por vez primera) .</p1>
+      <br>
     </nav>
-    <section id="content">
-      <p1>Sí la probabilidad de que un cierto dispositivo de medición muestre una desviación excesiva es de 0.05</p1>
-      <p1>¿cuál es la probabilidad de que:</p1>
-      <p1>el "x" de estos dispositivos de medición sometidos a prueba sea el numero "k" en mostrar una desviación excesiva?:</p1>
-  <output id="r2"></output>
-    </section>
-    <aside>
-      <input type="text" id="n11" placeholder="X">
-  <input type="text" id="n22" placeholder="K">
-   <input type="button" onclick="calcular()" value="Calcular">
-
-    </aside>
-
-    <footer>
-      Probabilidad y estadistica 2CM10
-    </footer>
+      <section id="content">
+        <br><p1>A continuación se presentan un ejemplo de un problema donde
+        se usa distribución binomial negativa</p1>
+        <br>
+        <br>
+  <h1>Ejemplo:</h1><br>
+        <p1>Sí la probabilidad de que un cierto dispositivo de medición muestre una desviación excesiva es de 0.05 (p)</p1>
+        <p1>¿cuál es la probabilidad de que:</p1>
+        <p1>el "x" de estos dispositivos de medición sometidos a prueba sea el numero "r" en mostrar una desviación excesiva?:</p1>
+        <br><br><p1>El resultado de la distribución es -></p1>
+        <output id="r2"></output><br><br>
+      </section>
+      <aside>
+        <h1>Datos</h1><img src="img/Balanza.png" widht="80" height="80"><br>
+        <p1>p=0.05</p1><br>
+          <p1>p'=0.95</p1><br>
+        <input type="text" id="n11" placeholder="Ingrese x">
+        <input type="text" id="n22" placeholder="Ingrese r">
+        <input type="button" onclick="calcular()" value="Calcular"><br>  <br>
+      </aside>
+      <footer>
+        <br>
+      </footer>
     </div>
-
-  <script src="binomialn.js"> </script>
-
+    <script src="binomialn.js"> </script>
   </body>
-</html>
+  </html>
