@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hipergeométrica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function factorial (n) {
+        var total = 1; 
+        for (i=1; i<=n; i++) {
+          total = total * i; 
+        }
+        return total; 
+      }
+      function combinacion(N,n){
+        return (factorial(N))/((factorial(N-n))*(factorial(n)));
+      }
+      function hiper(){
+        var x=document.getElementById("elegR").value;
+        var k=document.getElementById("rojas").value;
+        var n=document.getElementById("tam").value;
+        var N=52;
+        return (combinacion(k,x))*(combinacion(N-k,n-x))/(combinacion(N,n));
+      }
+    </script>
+    <style type="text/css">
+        .form-control{
+           width:auto;
+           display: inline;
+           margin: 10px;
+           padding: 3px 5px 1px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+          function calcular() {
+            var a = document.getElementById("elegN");
+            var x=document.getElementById("elegR").value;
+            var n=document.getElementById("tam").value;
+            a.value = n-x;
+          }
+      </script>
+      <div class="row">
+        <div class="col-md-1">
+          <img src="img/corazonA.bmp" class="img-fluid">
+          <img src="img/corazonJ.bmp" class="img-fluid">
+          <img src="img/corazonQ.bmp" class="img-fluid">
+          <img src="img/corazonK.bmp" class="img-fluid">
+          <img src="img/trebolA.bmp" class="img-fluid">
+          <img src="img/trebolJ.bmp" class="img-fluid">
+          <img src="img/trebolQ.bmp" class="img-fluid">
+          <img src="img/trebolK.bmp" class="img-fluid">
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <h1>Distribucion Hipergeométrica</h1>
+            <p>La distribución hipergeométrica es especialmente útil en todos aquellos casos en los que se extraigan muestras o se realicen experiencias repetidas sin devolución del elemento extraído o sin retornar a la situación experimental inicial.
+            Es una distribución fundamental en el estudio de muestras pequeñas de poblaciones pequeñas y en el cálculo de probabilidades de juegos de azar. Tiene grandes aplicaciones en el control de calidad para  procesos experimentales en los que no es posible retornar a la situación de partida</p>
+            <h5>Con formula:<img src="img/formula.png" width="60%" height="50%" class="img-fluid"></h5>
+            <h3>Ejercicio</h3>
+            <p>De una baraja tradicional se sacan 5 cartas al azar, nos interesa la probabilidad de seleccionar 3 cartas rojas de las 26 disponibles y 2 de las 26 cartas negras de las que dispone la baraja. Los datos precargados son el ejemplo inicial, puedes jugar con los valores.</p>
+          </div>
+          <div class="row">
+              <div class="col">
+                <ul>
+                  <li>Total de cartas N=<input type="number" id="total" value="52" readonly class="form-control"></li>
+                  <li>Tamaño de la muestra n=<input type="number" id="tam" value="5" class="form-control" onkeyup="calcular()"></li>
+                  <li>Cartas rojas k=<input type="number" id="rojas" value="26" readonly class="form-control"></li>
+                  <li>Cartas negras N-k=<input type="number" id="negras" value="26" readonly class="form-control"></li>
+                  <li>Cartas rojas a elegir x=<input type="number" id="elegR" value="3" class="form-control"></li>
+                  <li>Cartas negras a elegir n-x=<input type="number" id="elegN" value="2" readonly class="form-control"></li>
+                </ul>
+                <button type="button" class="btn btn-success" onclick="document.getElementById('respuesta').innerHTML = hiper()">
+              Calcular</button>
+            <p id="respuesta" style="text-align: center; display: inline-block;">La probabilidad aparece aqui</p>
+              </div>
+              <div class="col">
+                <img src="img/tablero.png" class="img-fluid" width="70%">
+              </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <img src="img/naipeA.bmp" class="img-fluid">
+          <img src="img/naipeJ.bmp" class="img-fluid">
+          <img src="img/naipeQ.bmp" class="img-fluid">
+          <img src="img/naipeK.bmp" class="img-fluid">
+          <img src="img/diamanteA.bmp" class="img-fluid">
+          <img src="img/diamanteJ.bmp" class="img-fluid">
+          <img src="img/diamanteQ.bmp" class="img-fluid">
+          <img src="img/diamanteK.bmp" class="img-fluid">
+        </div>  
+      </div>
+  </body>
+</html>
