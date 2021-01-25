@@ -15,7 +15,7 @@ const Problema = () => {
     const [peso, setPeso] = React.useState(8);
     return (
         <>
-            <h1>El problema de ...</h1>
+            <h1>El problema de las baterias</h1>
             <h2>Descripcion</h2>
             <p>El peso de cierto modelo de baterias sigue una distribucion normal con una media de <SelectData value={media} set={setMedia} range={[4, 5, 6, 7, 8]} />g y desvianción estandar de <SelectData value={desviacion} set={setDesviacion} range={[1, 2, 3]} />g.</p>
             <p>Determine el procentaje de baterias cuyo peso es mayor a <SelectData value={peso} set={setPeso} range={[8, 9, 10]} />g.</p>
